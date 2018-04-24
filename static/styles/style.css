@@ -1,0 +1,68 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+   background-color: #4CAF50;
+   color: white;
+   padding: 8px;
+   text-align: center;
+	
+}
+
+tr:nth-child(even) {background-color: #D9D9D9;}
+a:link, a:visited {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: green;
+}
+
+.cri { background-color: red;
+       color: white;
+       text-align: center;
+       text-decoration: none;
+}
+.war { background-color: orange;
+       color: white;
+       text-align: center;
+       text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+

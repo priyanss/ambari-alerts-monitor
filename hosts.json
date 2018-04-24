@@ -1,0 +1,14 @@
+{
+    "hosts": [
+        {
+            "href": "https://dummy_host1:8080/api/v1/clusters/dummy_cluster1",
+            "username": "admin_user",
+	    "password": "admin_user_pass"
+        },
+        {
+            "href": "https://dummy_host2:8080/api/v1/clusters/dummy_cluster2",
+            "username": "admin_user",
+            "password": "admin_user_password"
+	}
+    ]
+}
