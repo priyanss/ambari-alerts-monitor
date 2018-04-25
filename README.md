@@ -9,7 +9,7 @@ requests
 datetime
 json
 ```
-If those are not installed alreay, you can install them using pip or conda or whatever.
+If those are not installed already, you can install them using pip or conda or whatever.
 Once the dependencies are resolved, simply clone the app -
 
 ```
@@ -41,6 +41,11 @@ response = requests.get(host["href"]+'/alerts?fields=*&Alert/state.in(WARNING,CR
 By default, the app listens on http://localhost:5000 . If you want to change the IP, go to **line 40** on **alert_mon.py**, and specify your IP like below -
 ```
 app.run(host='1.2.3.4')
+```
+### Configure refresh interval
+App is set to refresh every 60 secs by default. This is because, Ambari updates happen at one minute interval. If you want to change the frequency, modify **line 6** on **templates/index.html** to have a different value(in seconds) for "content" attribute.
+```
+<meta http-equiv="refresh" content="60">
 ```
 That's it !
 ## Run
