@@ -26,7 +26,7 @@
 	<th>Duration</th>
 	<th>Ambari URL</th>
 	</tr>
-      {% if result[1] is defined %}
+      {% if result[0]['items'][0] is defined %}
       {% for each in result %}
           {% for item in each["items"] %}
             <tr>
