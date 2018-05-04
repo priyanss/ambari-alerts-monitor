@@ -6,7 +6,7 @@
 <meta http-equiv="refresh" content="60">
 <ul>
   <li><a href=".">Dashboard</a></li>
-  <li style="float:right"><a href="#">Ambari Alerts Monitor</a></li>
+  <li style="float:right"><a href=".">Ambari Alerts Monitor</a></li>
 </ul>
 <title>Ambari Alerts Monitor</title>
 
@@ -26,6 +26,7 @@
 	<th>Duration</th>
 	<th>Ambari URL</th>
 	</tr>
+      {% if result[1] is defined %}
       {% for each in result %}
           {% for item in each["items"] %}
             <tr>
@@ -47,6 +48,9 @@
 	    </tr>
           {% endfor %}
       {% endfor %}
+      {% else %}
+        <tr><td colspan="10" style="text-align:center;"><font size="5" color="green">No alerts, enjoy !</font></td></tr>
+      {% endif %}
       </table>
 {% endblock %}
 
